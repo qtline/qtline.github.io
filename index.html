@@ -65,7 +65,7 @@
     <article id="post-hxeo-install" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/12/28/hxeo-install/" class="article-date">
-  <time datetime="2015-12-28T11:30:51.820Z" itemprop="datePublished">2015-12-28</time>
+  <time datetime="2015-12-28T11:34:18.252Z" itemprop="datePublished">2015-12-28</time>
 </a>
     
   </div>
@@ -85,7 +85,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="u5B89_u88C5Hexo_u7A0B_u5E8F"><a href="#u5B89_u88C5Hexo_u7A0B_u5E8F" class="headerlink" title="安装Hexo程序"></a>安装Hexo程序</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<h3 id="u8BBE_u7F6E_u6743_u9650"><a href="#u8BBE_u7F6E_u6743_u9650" class="headerlink" title="设置权限"></a>设置权限</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod <span class="number">777</span> Hexo/blog/<span class="built_in">source</span>/_posts/</span><br></pre></td></tr></table></figure>
+<h3 id="u8BBE_u7F6E_u76EE_u5F55_u53EF_u5199_u6743_u9650"><a href="#u8BBE_u7F6E_u76EE_u5F55_u53EF_u5199_u6743_u9650" class="headerlink" title="设置目录可写权限"></a>设置目录可写权限</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod <span class="number">777</span> Hexo/blog/<span class="built_in">source</span>/_posts/</span><br></pre></td></tr></table></figure>
 <h3 id="u914D_u7F6E_config-yml_u4E3AGit_u90E8_u7F72"><a href="#u914D_u7F6E_config-yml_u4E3AGit_u90E8_u7F72" class="headerlink" title="配置_config.yml为Git部署"></a>配置_config.yml为Git部署</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://qtline:leihao4<span class="variable">$@github</span>.com/qtline/qtline.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  message: html部署</span><br></pre></td></tr></table></figure>
 <h3 id="u5B89_u88C5hexo-deployer-git"><a href="#u5B89_u88C5hexo-deployer-git" class="headerlink" title="安装hexo-deployer-git"></a>安装hexo-deployer-git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <h3 id="u6267_u884C_u90E8_u7F72"><a href="#u6267_u884C_u90E8_u7F72" class="headerlink" title="执行部署"></a>执行部署</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy --generate</span><br></pre></td></tr></table></figure>
